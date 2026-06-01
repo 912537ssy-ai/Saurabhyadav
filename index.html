@@ -2,53 +2,141 @@
 <html>
 <head>
 <title>Saurabh Food</title>
+
 <style>
 body{
-font-family:Arial;
 margin:0;
+font-family:Arial,sans-serif;
 background:#f5f5f5;
 }
-.header{
-background:red;
+
+.navbar{
+background:#e23744;
 color:white;
-padding:30px;
-text-align:center;
+padding:15px;
+display:flex;
+justify-content:space-between;
 }
+
+.navbar button{
+background:white;
+color:#e23744;
+border:none;
+padding:8px 12px;
+border-radius:5px;
+margin-left:5px;
+}
+
+.header{
+background:#e23744;
+color:white;
+text-align:center;
+padding:40px 20px;
+}
+
+.search{
+width:80%;
+padding:12px;
+border:none;
+border-radius:8px;
+}
+
 .card{
 background:white;
 margin:15px;
 padding:15px;
 border-radius:10px;
+box-shadow:0 2px 8px rgba(0,0,0,0.2);
 }
-button{
-background:red;
+
+.card img{
+width:100%;
+border-radius:10px;
+}
+
+.order-btn{
+background:#e23744;
 color:white;
 border:none;
 padding:10px;
 border-radius:5px;
 }
+
+.footer{
+background:#222;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:20px;
+}
 </style>
+
 </head>
 
 <body>
 
+<div class="navbar">
+<div><b>Saurabh Food</b></div>
+
+<div>
+<button>Home</button>
+<button>Login</button>
+<button>Cart 🛒</button>
+</div>
+</div>
+
 <div class="header">
-<h1>Saurabh Food</h1>
+<h1>Order Food Online</h1>
 <p>Discover the best food near you</p>
-  <p>🍕 Pizza | 🍔 Burger | 🥤 Drinks | 🍰 Cake</p>
-<input type="text" placeholder="Search food or restaurant" style="width:80%;padding:10px;border:none;border-radius:5px;">
+
+<input class="search"
+placeholder="Search food, restaurant...">
+
+<p>🍕 Pizza | 🍔 Burger | 🥤 Drinks | 🍰 Cake</p>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591">
+
 <h2>Pizza Hut</h2>
-<p>Rating ⭐ 4.5</p>
-<button>Order Now</button>
+
+<p>⭐ Rating 4.5</p>
+
+<p>₹299 onwards</p>
+
+<button class="order-btn">
+Order Now
+</button>
 </div>
 
 <div class="card">
+<img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd">
+
 <h2>Burger King</h2>
-<p>Rating ⭐ 4.3</p>
-<button>Order Now</button>
+
+<p>⭐ Rating 4.3</p>
+
+<p>₹199 onwards</p>
+
+<button class="order-btn">
+Order Now
+</button>
+</div>
+
+<div class="card">
+<h2>Domino's Pizza</h2>
+
+<p>⭐ Rating 4.6</p>
+
+<p>₹249 onwards</p>
+
+<button class="order-btn">
+Order Now
+</button>
+</div>
+
+<div class="footer">
+© 2026 Saurabh Food
 </div>
 
 </body>
